@@ -1,6 +1,7 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
+import styles from "./index.module.css";
 
-const DefinindoTipo: FC = () => {
+const DefinindoTipo = () => {
    //  Definindo tipo de variável
    const nome: string = "Renzi Fidele";
    const idade: number = 22;
@@ -20,10 +21,13 @@ const DefinindoTipo: FC = () => {
       console.log(`A idade é: ${idade}`);
    };
 
-   semRetorno(23);
+   useEffect(() => {
+      semRetorno(50);
+   }, []);
 
    return (
-      <div>
+      <div id={styles.ct}>
+         <h1>Definindo Tipo</h1>
          <p>Nome: {nome}</p>
          <p>Idade: {idade}</p>
          <p>É casado? {casado === false ? "Não" : "Sim"}</p>
