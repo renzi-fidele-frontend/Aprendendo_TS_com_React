@@ -1,8 +1,12 @@
-import { useState } from "react";
 import "./App.css";
+import DefinindoTipoVariavel from "./components/DefinindoTipo";
 
 function App() {
-   return <></>;
+   return (
+      <>
+         <DefinindoTipoVariavel />
+      </>
+   );
 }
 
 export default App;
