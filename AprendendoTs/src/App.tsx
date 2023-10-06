@@ -1,4 +1,6 @@
 import "./App.css";
+import DefinindoEstado from "./components/DefinindoEstado";
+import DefinindoEvento from "./components/DefinindoEvento";
 import DefinindoInterface from "./components/DefinindoInterface";
 import DefinindoTipo from "./components/DefinindoTipo";
 import { FC } from "react";
@@ -12,6 +14,8 @@ const App: FC = () => {
       <>
          <DefinindoTipo />
          <DefinindoInterface key={1} nome={nome} casado={casado} idade={idade} />
+         <DefinindoEstado />
+         <DefinindoEvento />
       </>
    );
 };

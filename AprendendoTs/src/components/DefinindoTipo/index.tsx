@@ -1,5 +1,5 @@
-import React, { FC, useEffect } from "react";
-import styles from "./index.module.css";
+import React, { useEffect } from "react";
+import styles from "./styles.module.css";
 
 const DefinindoTipo = () => {
    //  Definindo tipo de variável
@@ -18,11 +18,13 @@ const DefinindoTipo = () => {
 
    //   Caso a função não retorne nada devo definir o tipo para void
    const semRetorno = (idade: number): void => {
+      // Pessoas gostam de não definir o tipo dos parametros quando é void
       console.log(`A idade é: ${idade}`);
    };
 
    useEffect(() => {
       semRetorno(50);
+      getNome("Pedro");
    }, []);
 
    return (

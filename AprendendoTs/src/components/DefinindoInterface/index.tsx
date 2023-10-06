@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./index.module.css";
+import styles from "./styles.module.css";
 
 //  Definindo a interface das props do componente
 interface Props {
