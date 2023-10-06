@@ -7,7 +7,7 @@ const DefinindoEvento: FC = () => {
 
    return (
       <div>
-         <button onClick={handleClick}></button>
+         <button onClick={handleClick}>Clique em mim</button>
       </div>
    );
 };
