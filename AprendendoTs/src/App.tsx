@@ -2,7 +2,7 @@ import "./App.css";
 import DefinindoEstado from "./components/DefinindoEstado";
 import DefinindoEvento from "./components/DefinindoEvento";
 import DefinindoInterface from "./components/DefinindoInterface";
-import DefinindoTipo from "./components/DefinindoTipo";
+import DefinindoTipo from "./components/DefinindoTipoVariavel";
 import { FC } from "react";
 
 const App: FC = () => {
