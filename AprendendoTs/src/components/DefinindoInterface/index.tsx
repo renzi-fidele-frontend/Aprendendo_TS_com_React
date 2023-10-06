@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./styles.module.css";
+
 import { raca } from "../DefinindoEnum";
 
 //  Definindo a interface das props do componente
@@ -11,7 +11,7 @@ interface Props {
 
 const DefinindoInterface: FC<Props> = ({ nome, idade, casado }) => {
    return (
-      <div id={styles.ct}>
+      <div>
          <h1>Definindo Interface</h1>
          <p>O nome é: {nome}</p>
          <p>A idade é: {idade}</p>

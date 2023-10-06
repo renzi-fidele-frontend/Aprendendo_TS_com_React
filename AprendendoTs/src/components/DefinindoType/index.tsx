@@ -1,6 +1,6 @@
 import React from "react";
 
-const index = () => {
+const DefinindoType = () => {
    //  Type serve para definir valores obrigatórios de uma variável
    type TypeResposta = "sim" | "não";
    const resposta: TypeResposta = "sim";
@@ -12,4 +12,4 @@ const index = () => {
    );
 };
 
-export default index;
+export default DefinindoType;

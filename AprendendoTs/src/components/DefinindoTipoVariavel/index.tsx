@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import styles from "./styles.module.css";
 
 const DefinindoTipo = () => {
    //  Definindo tipo de variável
@@ -28,7 +27,7 @@ const DefinindoTipo = () => {
    }, []);
 
    return (
-      <div id={styles.ct}>
+      <div>
          <h1>Definindo Tipo</h1>
          <p>Nome: {nome}</p>
          <p>Idade: {idade}</p>

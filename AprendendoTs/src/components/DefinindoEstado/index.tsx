@@ -1,6 +1,12 @@
-import React, { FC, useState } from "react";
+import React, { FC, useContext, useEffect, useState } from "react";
+import { context } from "../../App";
 
 const DefinindoEstado: FC = () => {
+   const estado = useContext(context);
+   useEffect(() => {
+      console.log(estado);
+   }, [estado]);
+
    const [Texto, setTexto] = useState<string>("");
 
    return (
