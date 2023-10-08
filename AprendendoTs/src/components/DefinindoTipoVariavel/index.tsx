@@ -6,20 +6,25 @@ const DefinindoTipo = () => {
    const idade: number = 22;
    const casado: boolean = false;
 
+   // Definindo tipo de valores do array
+   const arr: Array<number> = [1, 2, 3] 
+
    //   Definindo o tipo que será retornado na função
-   const getNome = (nome: string): number => {
+   function getNome(nome: string): number {
       if (nome === "Renzi Fidele") {
          return 20;
       } else {
          return 0;
       }
-   };
+   }
 
    //   Caso a função não retorne nada devo definir o tipo para void
-   const semRetorno = (idade: number): void => {
+   function semRetorno(idade: number): void {
       // Pessoas gostam de não definir o tipo dos parametros quando é void
       console.log(`A idade é: ${idade}`);
-   };
+   }
+
+   
 
    useEffect(() => {
       semRetorno(50);
