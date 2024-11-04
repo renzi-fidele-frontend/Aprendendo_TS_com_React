@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 const DefinindoTipo = () => {
    //  Definindo tipo de variável
@@ -7,7 +7,7 @@ const DefinindoTipo = () => {
    const casado: boolean = false;
 
    // Definindo tipo de valores do array
-   const arr: Array<number> = [1, 2, 3] 
+   const arr: Array<number> = [1, 2, 3];
 
    //   Definindo o tipo que será retornado na função
    function getNome(nome: string): number {
@@ -23,8 +23,6 @@ const DefinindoTipo = () => {
       // Pessoas gostam de não definir o tipo dos parametros quando é void
       console.log(`A idade é: ${idade}`);
    }
-
-   
 
    useEffect(() => {
       semRetorno(50);

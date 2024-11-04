@@ -3,6 +3,7 @@ import React, { FC } from "react";
 const DefinindoEvento: FC = () => {
    const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
       console.log("Clicaste no botao");
+      e.pageX;
    };
 
    return (

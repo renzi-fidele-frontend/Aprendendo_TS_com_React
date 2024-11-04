@@ -1,5 +1,3 @@
-import React from "react";
-
 const DefinindoType = () => {
    //  Type serve para definir valores obrigatórios de uma variável
    type TypeResposta = "sim" | "não";

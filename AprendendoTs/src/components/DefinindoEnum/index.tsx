@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
 export enum raca {
    negro = "Afinal tu és negro",
