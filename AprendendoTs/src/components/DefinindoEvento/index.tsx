@@ -14,4 +14,3 @@ const DefinindoEvento: FC = () => {
 };
 
 export default DefinindoEvento;
- 
