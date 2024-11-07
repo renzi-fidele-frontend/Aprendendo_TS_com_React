@@ -1,4 +1,5 @@
 import "./App.css";
+import TemplateLiterals from "./components/TemplateLiterals/TemplateLiterals";
 import ProviderComReducer from "./context/ComReducer/ProviderComReducer";
 import ProviderSimples from "./context/Simples/ProviderSimples";
 import UtilizandoReducer from "./pages/UtilizandoReducer";
@@ -13,6 +14,7 @@ const App = () => {
          <ProviderComReducer>
             <UtilizandoReducer />
          </ProviderComReducer>
+         <TemplateLiterals />
       </div>
    );
 };
