@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { appContext } from "../context/Context";
+import { ContextSimples } from "../context/Simples/ContextSimples";
 
 const UtilizinadoContext = () => {
-   const estado = useContext(appContext);
+   const estado = useContext(ContextSimples);
    return <div>UtilizinadoContext</div>;
 };
 export default UtilizinadoContext;

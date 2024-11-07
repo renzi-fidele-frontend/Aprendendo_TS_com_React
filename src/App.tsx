@@ -1,13 +1,18 @@
 import "./App.css";
-import Provider from "./context/Provider";
+import ProviderComReducer from "./context/ComReducer/ProviderComReducer";
+import ProviderSimples from "./context/Simples/ProviderSimples";
+import UtilizandoReducer from "./pages/UtilizandoReducer";
 import UtilizinadoContext from "./pages/UtilizinadoContext";
 
 const App = () => {
    return (
       <div className="App">
-         <Provider>
+         <ProviderSimples>
             <UtilizinadoContext />
-         </Provider>
+         </ProviderSimples>
+         <ProviderComReducer>
+            <UtilizandoReducer />
+         </ProviderComReducer>
       </div>
    );
 };
