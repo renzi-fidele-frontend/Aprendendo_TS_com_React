@@ -1,7 +1,5 @@
 import { FC } from "react";
 
-import { raca } from "../DefinindoEnum";
-
 //  Definindo a interface das props do componente
 interface Props {
    nome: string; //  ?: serve para dizer que a prop é opcional
@@ -16,7 +14,6 @@ const DefinindoInterface: FC<Props> = ({ nome, idade, casado }) => {
          <p>O nome é: {nome}</p>
          <p>A idade é: {idade}</p>
          <p>Estado civil: {casado === true ? "casado" : "solteiro"}</p>
-         <p>{raca.negro}</p>
       </div>
    );
 };

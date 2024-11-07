@@ -1,25 +1,13 @@
 import "./App.css";
-import { FC, createContext } from "react";
+import Provider from "./context/Provider";
+import UtilizinadoContext from "./pages/UtilizinadoContext";
 
-// No Ts é obrigatório definir a interface do contexto
-interface contextInterface {
-   nome: string;
-   idade: number;
-   casado: boolean;
-}
-
-export const context = createContext<contextInterface | null>(null);
-
-const App: FC = () => {
-   const ContextValue: contextInterface = {
-      nome: "Renzi Fidele",
-      idade: 23,
-      casado: false,
-   };
-
+const App = () => {
    return (
       <div className="App">
-         <context.Provider value={ContextValue}></context.Provider>
+         <Provider>
+            <UtilizinadoContext />
+         </Provider>
       </div>
    );
 };
