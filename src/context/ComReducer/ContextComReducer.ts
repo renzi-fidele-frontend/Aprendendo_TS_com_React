@@ -1,7 +1,9 @@
 import { createContext, Dispatch } from "react";
 
 export interface IEquipeState {
+   /** Nome da equipe de futebol. */
    nome: string;
+   /** Número de pontos acumulados pela equipe na liga. */
    pontuacao: number;
    loading: boolean;
 }
@@ -13,8 +15,7 @@ export type IEquipeActions =
    | { type: "resetar" }
    | { type: "setLoading"; payload: boolean };
 
-export const EquipeState = { nome: "Barcelona", pontuacao: 10, loading: false };
-
 type ContextType = IEquipeState & { dispatch: Dispatch<IEquipeActions> };
 
-export const EquipeContext = createContext<ContextType>({ ...EquipeState, dispatch: () => {} });
+// Garanto ao TS que o objeto será entregue como o desejado, só que o farei mais a frente e não logo aqui, deverei utilizar sempre está prática
+export const EquipeContext = createContext<ContextType>({ ...({} as IEquipeState), dispatch: () => {} });

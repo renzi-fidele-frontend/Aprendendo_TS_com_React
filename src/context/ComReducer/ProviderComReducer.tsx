@@ -1,5 +1,5 @@
 import { ReactNode, Reducer, useReducer } from "react";
-import { EquipeContext, EquipeState, IEquipeActions, IEquipeState } from "./ContextComReducer";
+import { EquipeContext, IEquipeActions, IEquipeState } from "./ContextComReducer";
 
 //  Configurando o reducer
 
@@ -18,9 +18,7 @@ const ProviderComReducer = ({ children }: { children: ReactNode }) => {
             return estado;
       }
    }
-   const [estado, dispatch] = useReducer<Reducer<IEquipeState, IEquipeActions>>(reducer, EquipeState);
-
-   dispatch({ type: "somar", payload: 2 });
+   const [estado, dispatch] = useReducer<Reducer<IEquipeState, IEquipeActions>>(reducer, { nome: "Barcelona", pontuacao: 10, loading: false });
 
    return <EquipeContext.Provider value={{ ...estado, dispatch }}>{children}</EquipeContext.Provider>;
 };
